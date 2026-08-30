@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://ds571lbwm7gls"]
+
+[ext_resource type="Script" uid="uid://cb78ii8t72e7n" path="res://new_script.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://dmrr20p3p6k54" path="res://hype/starfield.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://dn1tpwwt3cg4e" path="res://icon.svg" id="2_0e48y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_s1fef"]
+font_size = 40
+font_color = Color(0.24269372, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_epypp"]
+font_size = 23
+font_color = Color(0.24269372, 1, 1, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_epypp"]
+load_path = "res://.godot/imported/upgrade.png-a652d59bc1c0bc825bfaf208bd4a5abc.ctex"
+
+[node name="MAIN" type="Node2D" unique_id=831419644]
+script = ExtResource("1_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=33352555]
+position = Vector2(575.5, 323)
+scale = Vector2(1.43625, 1.0766667)
+texture = ExtResource("1_wtcfe")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1892941860]
+
+[node name="clickb" type="Button" parent="UI" unique_id=1502079666]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -68.0
+offset_right = 68.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_0e48y")
+flat = true
+
+[node name="scorel" type="Label" parent="UI" unique_id=1804045891]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -121.5
+offset_right = 121.5
+offset_bottom = 80.0
+grow_horizontal = 2
+text = "0"
+label_settings = SubResource("LabelSettings_s1fef")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="costl" type="Label" parent="UI" unique_id=1142020295]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -269.0
+offset_bottom = 32.0
+grow_horizontal = 0
+text = "Улучшить клик (10)"
+label_settings = SubResource("LabelSettings_epypp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="clickup" type="Button" parent="UI" unique_id=97483799]
+anchors_preset = -1
+offset_left = 1003.0
+offset_top = 239.0
+offset_right = 1523.0
+offset_bottom = 759.0
+scale = Vector2(0.2800001, 0.2800001)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = SubResource("CompressedTexture2D_epypp")
+flat = true
